@@ -66,12 +66,3 @@
 .hover\:text-secondary:hover { color: var(--color-secondary); }
 .hover\:bg-primary:hover { background-color: var(--color-primary); }
 .hover\:bg-darkest:hover { background-color: var(--color-darkest); }
-
-/* Font Families */
-.font-port-lligat {
-  font-family: 'Port Lligat Slab', serif;
-}
-
-.font-manrope {
-  font-family: 'Manrope', sans-serif;
-}
