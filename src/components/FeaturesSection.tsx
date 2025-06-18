@@ -75,7 +75,7 @@ export const FeaturesSection = ({ onTryNow }: FeaturesSectionProps) => {
                 fill="currentColor"
               />
             </svg>
-            <h2 className="font-playfair text-white text-5xl lg:text-7xl font-black leading-[150%]">
+            <h2 id="features-section" className="font-playfair text-white text-5xl lg:text-7xl font-black leading-[150%]">
               Our Features
             </h2>
           </div>

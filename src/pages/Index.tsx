@@ -29,16 +29,6 @@ export default function Index() {
     // Implement navigation to blog post details
   };
 
-  const handleSocialClick = (platform: string) => {
-    console.log("Social media clicked:", platform);
-    // Implement social media navigation
-  };
-
-  const handleFooterLinkClick = (link: string) => {
-    console.log("Footer link clicked:", link);
-    // Implement footer link navigation
-  };
-
   return (
     <div className="bg-white pt-5">
       <Header activePage="home" onSignOut={handleSignOut} />
