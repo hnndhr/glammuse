@@ -2,14 +2,14 @@ import React from "react";
 
 const ColorPalette = () => {
   const colors = [
-    "#ef755e", // summer-1
-    "#ea7e24", // summer-2
-    "#edc242", // summer-3
-    "#e0eb25", // summer-4
-    "#5ef083", // summer-5
-    "#25eacc", // summer-6
-    "#a57cf2", // summer-7
-    "#ed7cf2", // summer-8
+    "#0da7c1", 
+    "#0c71c1", 
+    "#4c0cc2", 
+    "#c20e95 ", 
+    "#8d0217", 
+    "#332d1d", 
+    "#1d3229", 
+    "#1d3229",
   ];
 
   return (
