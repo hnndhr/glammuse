@@ -53,10 +53,7 @@ export default function Index() {
         <BeautypediaSection onBlogCardClick={handleBlogCardClick} />
       </main>
 
-      <Footer
-        onSocialClick={handleSocialClick}
-        onLinkClick={handleFooterLinkClick}
-      />
+      <Footer/>
     </div>
   );
 }

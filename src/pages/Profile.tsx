@@ -70,10 +70,7 @@ export default function Index() {
         />
       </main>
       
-      <Footer
-        onSocialClick={handleSocialClick}
-        onLinkClick={handleFooterLinkClick}
-      />
+      <Footer/>
     </div>
   );
 }
