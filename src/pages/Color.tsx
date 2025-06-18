@@ -15,7 +15,7 @@ const Index = () => {
   const seasonalBackgrounds = {
     Spring: {
       bgImage:
-        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+        "https://cdn.builder.io/api/v1/assets/abf4f3be1f2f41e89737c35973df4649/figma-screenshot-849a52?format=webp&width=800",
       palette:
         "bg-gradient-conic from-pink-200 via-green-200 via-yellow-200 via-blue-200 to-pink-200",
     },
@@ -27,13 +27,13 @@ const Index = () => {
     },
     Autumn: {
       bgImage:
-        "https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80",
+        "https://cdn.builder.io/api/v1/assets/abf4f3be1f2f41e89737c35973df4649/figma-screenshot-e266b2?format=webp&width=800",
       palette:
         "bg-gradient-conic from-orange-400 via-red-400 via-yellow-400 via-amber-400 to-orange-400",
     },
     Winter: {
       bgImage:
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+        "https://cdn.builder.io/api/v1/assets/abf4f3be1f2f41e89737c35973df4649/figma-screenshot-7feb4f?format=webp&width=800",
       palette:
         "bg-gradient-conic from-blue-600 via-purple-600 via-gray-600 via-slate-600 to-blue-600",
     },
