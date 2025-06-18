@@ -1,25 +1,84 @@
-"use client";
-import React from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export function ColorFilterBox() {
+interface SeasonalBackground {
+  bgImage: string;
+  palette: string;
+}
+
+interface SeasonalBackgrounds {
+  [key: string]: SeasonalBackground;
+}
+
+interface ColorFilterBoxProps {
+  currentSeason: string;
+  onPreviousSeason: () => void;
+  onNextSeason: () => void;
+  seasonalBackgrounds: SeasonalBackgrounds;
+}
+
+const ColorFilterBox = ({
+  currentSeason,
+  onPreviousSeason,
+  onNextSeason,
+  seasonalBackgrounds,
+}: ColorFilterBoxProps) => {
   return (
-    <div className="px-14 pt-4 pb-7 w-full text-4xl text-center bg-white rounded-3xl border border-solid border-stone-700 border-opacity-70 min-h-[992px] shadow-[3px_3px_4px_rgba(0,0,0,0.25)] text-stone-700 max-md:px-5 max-md:max-w-full">
-      <h2 className="gap-6 self-stretch w-full max-md:max-w-full">
-        Choose Your True Color
-      </h2>
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/58cd6d364fff4966b7ea43a323aeb3d1/84fdab07600b1c72c1a810564b2b36933dec8e22?placeholderIfAbsent=true"
-        className="object-contain mt-7 w-full aspect-[1.31] max-md:max-w-full"
-        alt="Color filter preview"
-      />
-      <div className="z-10 px-16 pb-0 mt-7 w-full whitespace-nowrap max-md:px-5 max-md:max-w-full">
-        Summer
+    <div className="w-full flex flex-col items-start gap-[26px] p-[52px_52px_15px] rounded-[20px] border border-glam-darker-brown border-opacity-70 bg-white shadow-[3px_3px_4px_0px_rgba(0,0,0,0.25)]">
+      {/* Top */}
+      <div className="w-full flex justify-center items-center">
+        <h2 className="text-glam-darker-brown text-center font-hanuman text-[40px] font-normal leading-[150%]">
+          Choose Your True Color
+        </h2>
       </div>
-      <div className="flex flex-col items-center px-20 mt-7 w-full text-xl text-white bg-white max-md:px-5 max-md:max-w-full">
-        <button className="px-16 py-2.5 max-w-full rounded-xl shadow-sm bg-stone-700 w-[274px] max-md:px-5">
+
+      {/* Color Palette Display */}
+      <div className="relative w-full h-[716px] overflow-hidden rounded-lg">
+        {/* Seasonal Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-500 ease-in-out"
+          style={{
+            backgroundImage: `url('${seasonalBackgrounds[currentSeason].bgImage}')`,
+          }}
+        ></div>
+
+        {/* Color overlay based on season */}
+        <div
+          className={`absolute inset-0 ${seasonalBackgrounds[currentSeason].palette} opacity-40 mix-blend-overlay`}
+        ></div>
+
+        {/* Center circle for face detection */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[224px] h-[265px] rounded-full bg-gray-300 border-4 border-white shadow-lg"></div>
+      </div>
+
+      {/* Season Navigation */}
+      <div className="w-full flex items-center justify-center gap-[25px]">
+        <button
+          onClick={onPreviousSeason}
+          className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+        >
+          <ChevronLeft className="w-6 h-6 text-glam-purple" />
+        </button>
+
+        <h3 className="text-glam-darker-brown font-hanuman text-[40px] font-normal leading-[150%] min-w-[200px] text-center">
+          {currentSeason}
+        </h3>
+
+        <button
+          onClick={onNextSeason}
+          className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+        >
+          <ChevronRight className="w-6 h-6 text-glam-purple" />
+        </button>
+      </div>
+
+      {/* Submit Button */}
+      <div className="w-full flex justify-center">
+        <button className="w-[274px] h-[40px] rounded-[10px] bg-stone-700 text-white font-manrope text-[20px] font-normal leading-[150%] shadow-[0px_0px_4px_1px_rgba(0,0,0,0.25)] hover:bg-opacity-90 transition-all">
           See Description
         </button>
       </div>
     </div>
   );
-}
+};
+
+export default ColorFilterBox;
