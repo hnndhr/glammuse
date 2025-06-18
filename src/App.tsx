@@ -17,6 +17,7 @@ import SkinTypeResults from "./pages/SkinTypeResults";
 import AboutUs from "./pages/AboutUs";
 import BodyShape from "./pages/BodyShape";
 import BodyTypeResults from "./pages/BodyTypeResults";
+import ResultColorAutumn from "./pages/ResultColorAutumn";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/summer" element={<ResultColorSummer />} /> 
           <Route path="/spring" element={<ResultColorSpring />} />
           <Route path="/winter" element={<ResultColorWinter />} />
+          <Route path="/autumn" element={<ResultColorAutumn />} />
           <Route path="/skin-type-quiz" element={<SkinTypeQuiz />} />
           <Route path="/skin-type-results" element={<SkinTypeResults />} />
           <Route path="/about-us" element={<AboutUs />} />
