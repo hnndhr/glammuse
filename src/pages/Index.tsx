@@ -13,8 +13,10 @@ export default function Index() {
   };
 
   const handleGetStarted = () => {
-    console.log("Get Started clicked");
-    // Implement navigation to sign up or login
+    const featuresSection = document.getElementById("features-section");
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const handleTryNow = () => {
