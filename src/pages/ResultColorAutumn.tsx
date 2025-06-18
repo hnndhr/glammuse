@@ -23,12 +23,12 @@ const ResultColorAutumn = () => {
           {/* Text Content */}
           <div className="text-justify max-w-[1040px] mx-auto">
             <h2 className="font-manrope text-xl md:text-2xl lg:text-[30px] font-bold leading-[150%] tracking-[0.6px] text-black mb-6">
-              Unleash the Bold Power of Winter
+              Fall in Love with the Warm Depth of Autumn
             </h2>
 
             <div className="space-y-6">
               <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                Striking, crisp, and confident—Winter beauties are made to turn heads. This seasonal palette is filled with cool, high-contrast colors that bring drama and definition. Think icy white, jet black, sapphire blue, emerald green, and rich burgundy—bold shades that match your intense elegance.
+                Earthy, rich, and naturally warm—Autumn types glow with grounded elegance. Your perfect shades are deep, warm, and cozy—think burnt orange, olive green, mustard, chocolate brown, and terracotta. These hues enhance your warm undertones and add depth to your overall look.
               </p>
 
               <div>
@@ -36,7 +36,7 @@ const ResultColorAutumn = () => {
                   In fashion
                 </h3>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                  Winter types own clean lines, statement pieces, and sharp contrasts. Classic black and white combos, jewel-toned dresses, and sleek fabrics are your best friends. Metallics like silver and platinum add an edge that feels right at home.
+                   Chunky knits, suede, and gold accessories. Go for earthy prints, deep greens, and rust-toned layers that complement your rich coloring.
                 </p>
               </div>
 
@@ -45,10 +45,10 @@ const ResultColorAutumn = () => {
                   For Makeup
                 </h3>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                  Crisp winged eyeliner, deep berry or red lips, and cool-toned contouring enhance your strong features. Avoid warm or muted colors—they can dull your natural brilliance.
+                  Copper eyeshadow, peachy blush, brick or terracotta lipsticks, and golden highlighter bring out your natural glow. Steer clear of cool or icy tones—they can clash with your warmth.
                 </p>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black mt-4">
-                  You’re not here to blend in. The Winter palette celebrates your cool intensity and bold glamour. Step into your season and let your style speak volumes.
+                  The Autumn palette is about comfort, richness, and natural allure. Let it wrap you in color that feels like home.
                 </p>
               </div>
               
