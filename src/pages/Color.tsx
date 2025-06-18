@@ -1,8 +1,8 @@
 "use client";
 import { Header } from '@/components/Header';
-import { HeroColor } from '@/components/HeroColor';
-import { ColorFilterBox } from '@/components/ColorFilterBox';
-import { InstructionsSection } from '@/components/InstructionSection';
+import { HeroColor } from '@/components/ColorMatch/HeroColor';
+import { ColorFilterBox } from '@/components/ColorMatch/ColorFilterBox';
+import { InstructionsSection } from '@/components/ColorMatch/InstructionSection';
 import { Footer } from '@/components/Footer';
 function Color() {
   return (
