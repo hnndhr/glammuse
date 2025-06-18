@@ -5,7 +5,7 @@ interface HeaderProps {
   activePage?: 'home' | 'features' | 'beautypedia' | 'wardrobe' | 'about' | 'profile';
 }
 
-export const Header: React.FC<HeaderProps> = ({ onSignOut, activePage = 'profile' }) => {
+export const Header: React.FC<HeaderProps> = ({ onSignOut, activePage = 'home' }) => {
   const handleSignOut = () => {
     if (onSignOut) {
       onSignOut();
@@ -67,7 +67,7 @@ export const Header: React.FC<HeaderProps> = ({ onSignOut, activePage = 'profile
           {/* Navigation */}
           <nav className="flex items-center gap-[33px] text-base flex-wrap px-[30px] max-md:max-w-full max-md:px-5" role="navigation" aria-label="Main navigation">
             <div className="self-stretch flex min-w-60 items-center gap-10 flex-wrap my-auto max-md:max-w-full">
-              <a href="#home" className={getLinkClass('home')}>
+              <a href="/" className={getLinkClass('home')}>
                 Home
               </a>
               <a href="#features" className={getLinkClass('features')}>
@@ -82,7 +82,7 @@ export const Header: React.FC<HeaderProps> = ({ onSignOut, activePage = 'profile
               <a href="#about" className={getLinkClass('about')}>
                 About Us
               </a>
-              <a href="#profile" className={getLinkClass('profile')}>
+              <a href="/profile" className={getLinkClass('profile')}>
                 Profile
               </a>
             </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Header } from '@/components/Header';
 import { ProfileSection } from '@/components/ProfileSection';
 import { SubscriptionSection } from '@/components/SubscriptionSection';
-import { AnalysisHistory } from '@/components/AnalysisHistory';
 import { Footer } from '@/components/Footer';
 
 interface PersonalInfo {
@@ -53,7 +52,7 @@ export default function Index() {
 
   return (
     <div className="bg-white pt-[34px]">
-      <Header onSignOut={handleSignOut} />
+      <Header activePage="profile" onSignOut={handleSignOut} />
       
       <main className="flex w-full flex-col pl-[35px] max-md:max-w-full max-md:pl-5">
         <ProfileSection
