@@ -73,10 +73,6 @@ export default function Skin() {
           </div>
         </div>
       </main>
-      <Footer
-        onSocialClick={handleSocialClick}
-        onLinkClick={handleFooterLinkClick}
-      />
     </div>
   );
 }
