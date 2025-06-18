@@ -76,9 +76,6 @@ export const Header: React.FC<HeaderProps> = ({ onSignOut, activePage = 'home' }
               <a href="/article" className={getLinkClass('beautypedia')}>
                 Beautypedia
               </a>
-              <a href="#wardrobe" className={getLinkClass('wardrobe')}>
-                Wardrobe
-              </a>
               <a href="#about" className={getLinkClass('about')}>
                 About Us
               </a>

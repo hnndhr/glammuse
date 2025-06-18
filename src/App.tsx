@@ -9,6 +9,8 @@ import Color from "./pages/Color";
 import NotFound from "./pages/NotFound"; 
 import Profile from "./pages/Profile";
 import ResultColorSummer from "./pages/ResultColorSummer";
+import SkinType from "./pages/Skin";
+import SkinTypeQuiz from "./pages/SkinTypeQuiz";
 
 const queryClient = new QueryClient();
 
@@ -23,7 +25,9 @@ const App = () => (
           <Route path="/article" element={<Article />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/color" element={<Color />} />
+          <Route path="/skin" element={<SkinType />} />
           <Route path="/summer" element={<ResultColorSummer />} /> 
+          <Route path="/skin-type-quiz" element={<SkinTypeQuiz />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
