@@ -21,6 +21,102 @@ interface BodyTypeInfo {
   };
 }
 
+// Image mapping for body types and clothing categories
+const bodyTypeImages: Record<
+  string,
+  {
+    illustration: string;
+    necklines: string;
+    shirts: string;
+    jackets: string;
+    trousers: string;
+    skirts: string;
+    dresses: string;
+  }
+> = {
+  triangle: {
+    illustration:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ee764f85ac120459fcfb626_Pear%20Body%20Shape%201-p-500.webp",
+    necklines:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed928aaf813806da444d1d3_5ed3a2df412d2bf04ab1ddd4_Pear-Body-Shape-Necklines-Dos-and-Donts.webp",
+    shirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed928aad30b18743a6bc0de_5ed3a2df3b79977081576454_Pear-Body-Shape-Shirts-Dos-and-Donts.webp",
+    jackets:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed928ab461530b09e2d940f_5ed3a2dfa0977fc52c494f78_Pear-Body-Shape-Jackets-Dos-and-Donts.webp",
+    trousers:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed9299313326e755ca77fc8_5ed3a2e0ef82aeb98b81a1c0_Pear-Body-Shape-Trousers-Dos-and-Donts.webp",
+    skirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed92993fd9f3292005eef99_5ed3a2e0a0977f3058494f79_Pear-Body-Shape-Skirts-Dos-and-Donts.webp",
+    dresses:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed929937c2ce8fb59fc5d45_5ed3a2e0a90a9c90931e5175_Pear-Body-Shape-Dresses-Dos-and-Donts.webp",
+  },
+  hourglass: {
+    illustration:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ee94418f037264b47738441_Hourglass%20Body%20Shape%201-p-500.webp",
+    necklines:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbdc1db414c7d475a7d804_5ed3a2e57eda2aedf4cd1124_Hourglass-Necklines-Dos-and-Donts.webp",
+    shirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbdc1da64212399ddbd9ce_5ed3a2e53b7997522e5764aa_Hourglass-Body-Shape-Shirts-Dos-and-Donts.webp",
+    jackets:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbdc1e800a2364176cb656_5ed3a2e64b317b6ba07a8ae6_Hourglass-Body-Shape-Jackets-Dos-and-Donts.webp",
+    trousers:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbdd11800a23e34a6cb9ed_5ed3a2e697a20a1edb8d123a_Hourglass-Body-Shape-Trousers-Dos-and-Donts.webp",
+    skirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbdd11b414c76ee3a7dd39_5ed3a2e6c6c9786497e0cb2e_Hourglass-Body-Shape-Skirts-Dos-and-Donts.webp",
+    dresses:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbdd11bca2fa4f249093bf_5ed3a2e66103a39ca6ec66ac_Hourglass-Body-Shape-Dresses-Dos-and-Donts.webp",
+  },
+  rectangle: {
+    illustration:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ee75925921007691cf74eda_Rectangle%20Body%20Shape%201-p-500.webp",
+    necklines:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed91dbcdc47dae1c14a0f39_Rectangle%20Body%20Shape%20Necklines%20Do%27s%20and%20Don%27ts.webp",
+    shirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed91ea1a1e0934d78eded61_5ed3a2db4fe81a258ea3c7d1_Rectangle-Body-Shape-Shirts-Dos-and-Donts.webp",
+    jackets:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed91ea111d714d2296a40e8_5ed3a2db3b79977082576429_Rectangle-Body-Shape-Jackets-Dos-and-Donts.webp",
+    trousers:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed91f80dc47da64a44a22df_5ed3a2dbc6c9789efde0cb24_Rectangle-Body-Shape-Trousers.webp",
+    skirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed91f804c1873002c88d83f_5ed3a2dcc6c9787c8de0cb25_Rectangle-Body-Shape-Skirts-Dos-and-Donts.webp",
+    dresses:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ed91f807f50a06aa4ef80ab_5ed3a2dc97a20aae9c8d1231_Rectangle-Body-Shape-Dresses-Dos-and-Donts.webp",
+  },
+  "inverted-triangle": {
+    illustration:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ee765222dbae8159b56877b_Inverted%20Triangle%20Body%20Shape%201-p-500.webp",
+    necklines:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbbfa981168b6d728e895a_5ed3a2e26103a3167cec66a4_Inverted-Triangle-Body-Shape-Neckline-Dos-and-Donts.webp",
+    shirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbc03db414c769dba724b8_5ed3a2e2a0977f0ffe494f85_Inverted-Triangle-Body-Shape-Shirts-Dos-and-Donts.webp",
+    jackets:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbc091c8019d2ad5f5dd3b_5ed3a2e3412d2b1e1ab1ddd8_Inverted-Triangle-Body-Shape-Jackets-Dos-and-Donts.webp",
+    trousers:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbc222b414c7996ba73dc1_5ed3a2e397a20a3fec8d1237_Inverted-Triangle-Body-Shape-Trousers-Dos-and-Donts.webp",
+    skirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbc294a642123595db284d_5ed3a2e3c6c978311de0cb2c_Inverted-Triangle-Body-Shape-Skirts-Dos-and-Donts.webp",
+    dresses:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbc2b91f30ad69d0c617d2_5ed3a2e397a20a0f498d1239_Inverted-Triangle-Body-Shape-Dresses-Dos-and-Donts.webp",
+  },
+  // Apple body type images for future use
+  apple: {
+    illustration:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ee9442a0258fa44591cb4bf_Apple%20Body%20Shape%201-p-500.webp",
+    necklines:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbe06ce93ebb0090407da1_5ed3a2e9ec5df28c32f8f33a_Apple-Body-Shape-Necklines-Dos-and-Donts.webp",
+    shirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbe06c88219c974da7c3c9_5ed3a2ea412d2b2191b1dddb_Apple-Shirts-Dos-and-Donts.webp",
+    jackets:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbe06c4bc6a541ee1915ff_5ed3a2ea7eda2a665dcd1125_Apple-Body-Shape-Jackets-Dos-and-Donts.webp",
+    trousers:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbe1a22f7ba22b3dd1a6d7_5ed3a2ea7eda2adaa5cd1126_Apple-Body-Shape-Trousers-Dos-and-Donts.webp",
+    skirts:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbe1a24bc6a5e2b2191a38_5ed3a2ea412d2bb215b1ddd9_Apple-Body-Shape-Skirts-Dos-and-Donts.webp",
+    dresses:
+      "https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5edbe1a2c6e427f350a90a69_5ed3a2ebec5df27514f8f33c_Apple-Body-Shape-Dresses-Dos-and-Donts.webp",
+  },
+};
+
 const bodyTypeData: Record<string, BodyTypeInfo> = {
   hourglass: {
     name: "Hourglass",
@@ -243,6 +339,11 @@ export default function BodyTypeResults() {
     }
   }, [searchParams, navigate]);
 
+  const getBodyTypeImages = (bodyTypeName: string) => {
+    const normalizedType = bodyTypeName.toLowerCase().replace(/\s+/g, "-");
+    return bodyTypeImages[normalizedType];
+  };
+
   const handleSignOut = () => {
     console.log("User signed out");
   };
@@ -268,12 +369,12 @@ export default function BodyTypeResults() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-glam-tertiary font-hanuman text-2xl mb-4">
+          <h2 className="text-tertiary font-hanuman text-2xl mb-4">
             Loading your results...
           </h2>
           <button
             onClick={() => navigate("/body-shape")}
-            className="px-6 py-3 bg-glam-tertiary text-white rounded-lg hover:bg-glam-darkest transition-colors"
+            className="px-6 py-3 bg-tertiary text-white rounded-lg hover:bg-darkest transition-colors"
           >
             Back to Calculator
           </button>
@@ -283,8 +384,9 @@ export default function BodyTypeResults() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-5">
       <Header onSignOut={handleSignOut} />
+      <div className="pt-5 bg-white"></div>
 
       {/* Hero Section */}
       <div className="relative w-full h-[250px] flex items-center justify-center overflow-hidden">
@@ -293,7 +395,7 @@ export default function BodyTypeResults() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0')",
+              "url('https://i.pinimg.com/736x/04/9a/13/049a138906420e68cc3ad6c3a0b293c9.jpg')",
           }}
         />
 
@@ -313,11 +415,19 @@ export default function BodyTypeResults() {
         <div className="max-w-[840px] mx-auto">
           {/* Top Description Section */}
           <div className="flex flex-col lg:flex-row items-center gap-8 mb-8">
-            <img
-              src="https://cdn.prod.website-files.com/5eca30fd2b50b671e2107b06/5ee765222dbae8159b56877b_Inverted%20Triangle%20Body%20Shape%201-p-500.webp"
-              alt="Body type illustration"
-              className="w-[273px] h-[407px] object-cover rounded-lg flex-shrink-0"
-            />
+            {(() => {
+              const images = getBodyTypeImages(bodyType);
+              return (
+                <img
+                  src={
+                    images?.illustration ||
+                    "https://images.unsplash.com/photo-1594824804732-ca8db5ac6d84?q=80&w=273&auto=format&fit=crop&ixlib=rb-4.1.0"
+                  }
+                  alt={`${bodyType} body type illustration`}
+                  className="w-[273px] h-[407px] object-cover rounded-lg flex-shrink-0"
+                />
+              );
+            })()}
             <div className="flex-1">
               <p className="text-black font-manrope text-xl md:text-2xl font-normal leading-[150%] tracking-[0.48px] text-justify">
                 {bodyTypeInfo.description}
@@ -368,11 +478,22 @@ export default function BodyTypeResults() {
                 <h3 className="text-black font-manrope text-xl md:text-2xl font-bold leading-[150%] tracking-[0.48px]">
                   Necklines
                 </h3>
-                <div className="w-full h-[280px] border-4 border-glam-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
-                  <p className="text-glam-tertiary font-manrope text-lg text-center px-4">
-                    {bodyTypeInfo.clothingCategories.necklines}
-                  </p>
-                </div>
+                {(() => {
+                  const images = getBodyTypeImages(bodyType);
+                  return images?.necklines ? (
+                    <img
+                      src={images.necklines}
+                      alt={`${bodyType} Necklines Dos and Don'ts`}
+                      className="w-full h-auto border-4 border-tertiary/70 rounded-lg object-contain"
+                    />
+                  ) : (
+                    <div className="w-full h-[280px] border-4 border-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
+                      <p className="text-tertiary font-manrope text-lg text-center px-4">
+                        {bodyTypeInfo.clothingCategories.necklines}
+                      </p>
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Shirts */}
@@ -380,11 +501,22 @@ export default function BodyTypeResults() {
                 <h3 className="text-black font-manrope text-xl md:text-2xl font-bold leading-[150%] tracking-[0.48px]">
                   Shirts
                 </h3>
-                <div className="w-full h-[280px] border-4 border-glam-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
-                  <p className="text-glam-tertiary font-manrope text-lg text-center px-4">
-                    {bodyTypeInfo.clothingCategories.shirts}
-                  </p>
-                </div>
+                {(() => {
+                  const images = getBodyTypeImages(bodyType);
+                  return images?.shirts ? (
+                    <img
+                      src={images.shirts}
+                      alt={`${bodyType} Shirts Dos and Don'ts`}
+                      className="w-full h-auto border-4 border-tertiary/70 rounded-lg object-contain"
+                    />
+                  ) : (
+                    <div className="w-full h-[280px] border-4 border-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
+                      <p className="text-tertiary font-manrope text-lg text-center px-4">
+                        {bodyTypeInfo.clothingCategories.shirts}
+                      </p>
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Jackets */}
@@ -392,11 +524,22 @@ export default function BodyTypeResults() {
                 <h3 className="text-black font-manrope text-xl md:text-2xl font-bold leading-[150%] tracking-[0.48px]">
                   Jackets
                 </h3>
-                <div className="w-full h-[280px] border-4 border-glam-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
-                  <p className="text-glam-tertiary font-manrope text-lg text-center px-4">
-                    {bodyTypeInfo.clothingCategories.jackets}
-                  </p>
-                </div>
+                {(() => {
+                  const images = getBodyTypeImages(bodyType);
+                  return images?.jackets ? (
+                    <img
+                      src={images.jackets}
+                      alt={`${bodyType} Jackets Dos and Don'ts`}
+                      className="w-full h-auto border-4 border-tertiary/70 rounded-lg object-contain"
+                    />
+                  ) : (
+                    <div className="w-full h-[280px] border-4 border-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
+                      <p className="text-tertiary font-manrope text-lg text-center px-4">
+                        {bodyTypeInfo.clothingCategories.jackets}
+                      </p>
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Trousers */}
@@ -404,11 +547,22 @@ export default function BodyTypeResults() {
                 <h3 className="text-black font-manrope text-xl md:text-2xl font-bold leading-[150%] tracking-[0.48px]">
                   Trousers
                 </h3>
-                <div className="w-full h-[280px] border-4 border-glam-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
-                  <p className="text-glam-tertiary font-manrope text-lg text-center px-4">
-                    {bodyTypeInfo.clothingCategories.trousers}
-                  </p>
-                </div>
+                {(() => {
+                  const images = getBodyTypeImages(bodyType);
+                  return images?.trousers ? (
+                    <img
+                      src={images.trousers}
+                      alt={`${bodyType} Trousers Dos and Don'ts`}
+                      className="w-full h-auto border-4 border-tertiary/70 rounded-lg object-contain"
+                    />
+                  ) : (
+                    <div className="w-full h-[280px] border-4 border-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
+                      <p className="text-tertiary font-manrope text-lg text-center px-4">
+                        {bodyTypeInfo.clothingCategories.trousers}
+                      </p>
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Skirts */}
@@ -416,11 +570,22 @@ export default function BodyTypeResults() {
                 <h3 className="text-black font-manrope text-xl md:text-2xl font-bold leading-[150%] tracking-[0.48px]">
                   Skirts
                 </h3>
-                <div className="w-full h-[280px] border-4 border-glam-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
-                  <p className="text-glam-tertiary font-manrope text-lg text-center px-4">
-                    {bodyTypeInfo.clothingCategories.skirts}
-                  </p>
-                </div>
+                {(() => {
+                  const images = getBodyTypeImages(bodyType);
+                  return images?.skirts ? (
+                    <img
+                      src={images.skirts}
+                      alt={`${bodyType} Skirts Dos and Don'ts`}
+                      className="w-full h-auto border-4 border-tertiary/70 rounded-lg object-contain"
+                    />
+                  ) : (
+                    <div className="w-full h-[280px] border-4 border-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
+                      <p className="text-tertiary font-manrope text-lg text-center px-4">
+                        {bodyTypeInfo.clothingCategories.skirts}
+                      </p>
+                    </div>
+                  );
+                })()}
               </div>
 
               {/* Dresses */}
@@ -428,11 +593,22 @@ export default function BodyTypeResults() {
                 <h3 className="text-black font-manrope text-xl md:text-2xl font-bold leading-[150%] tracking-[0.48px]">
                   Dresses
                 </h3>
-                <div className="w-full h-[280px] border-4 border-glam-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
-                  <p className="text-glam-tertiary font-manrope text-lg text-center px-4">
-                    {bodyTypeInfo.clothingCategories.dresses}
-                  </p>
-                </div>
+                {(() => {
+                  const images = getBodyTypeImages(bodyType);
+                  return images?.dresses ? (
+                    <img
+                      src={images.dresses}
+                      alt={`${bodyType} Dresses Dos and Don'ts`}
+                      className="w-full h-auto border-4 border-tertiary/70 rounded-lg object-contain"
+                    />
+                  ) : (
+                    <div className="w-full h-[280px] border-4 border-tertiary/70 rounded-lg bg-gray-50 flex items-center justify-center">
+                      <p className="text-tertiary font-manrope text-lg text-center px-4">
+                        {bodyTypeInfo.clothingCategories.dresses}
+                      </p>
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           </div>
@@ -441,13 +617,13 @@ export default function BodyTypeResults() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
             <button
               onClick={handleRetakeQuiz}
-              className="px-8 py-3 bg-glam-tertiary text-white font-manrope text-lg font-normal rounded-lg shadow-md transition-all duration-300 hover:bg-glam-darkest hover:scale-105 focus:outline-none focus:ring-2 focus:ring-glam-cream focus:ring-opacity-50"
+              className="px-8 py-3 bg-tertiary text-white font-manrope text-lg font-normal rounded-lg shadow-md transition-all duration-300 hover:bg-darkest hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cream focus:ring-opacity-50"
             >
               Retake Calculator
             </button>
             <button
               onClick={handleBackToHome}
-              className="px-8 py-3 bg-white text-glam-tertiary border-2 border-glam-tertiary font-manrope text-lg font-normal rounded-lg shadow-md transition-all duration-300 hover:bg-glam-cream hover:scale-105 focus:outline-none focus:ring-2 focus:ring-glam-tertiary focus:ring-opacity-50"
+              className="px-8 py-3 bg-white text-tertiary border-2 border-tertiary font-manrope text-lg font-normal rounded-lg shadow-md transition-all duration-300 hover:bg-cream hover:scale-105 focus:outline-none focus:ring-2 focus:ring-tertiary focus:ring-opacity-50"
             >
               Back to Home
             </button>
@@ -455,7 +631,10 @@ export default function BodyTypeResults() {
         </div>
       </div>
 
-      <Footer/>
+      <Footer
+        onSocialClick={handleSocialClick}
+        onLinkClick={handleFooterLinkClick}
+      />
     </div>
   );
 }
