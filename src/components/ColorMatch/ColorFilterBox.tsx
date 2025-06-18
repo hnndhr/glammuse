@@ -13,6 +13,7 @@ interface ColorFilterBoxProps {
   currentSeason: string;
   onPreviousSeason: () => void;
   onNextSeason: () => void;
+  onSeeDescription: () => void;
   seasonalBackgrounds: SeasonalBackgrounds;
 }
 
@@ -20,6 +21,7 @@ const ColorFilterBox = ({
   currentSeason,
   onPreviousSeason,
   onNextSeason,
+  onSeeDescription,
   seasonalBackgrounds,
 }: ColorFilterBoxProps) => {
   return (
@@ -73,7 +75,10 @@ const ColorFilterBox = ({
 
       {/* Submit Button */}
       <div className="w-full flex justify-center">
-        <button className="w-[274px] h-[40px] rounded-[10px] bg-stone-700 text-white font-manrope text-[20px] font-normal leading-[150%] shadow-[0px_0px_4px_1px_rgba(0,0,0,0.25)] hover:bg-opacity-90 transition-all">
+        <button
+          onClick={onSeeDescription}
+          className="w-[274px] h-[40px] rounded-[10px] bg-stone-700 text-white font-manrope text-[20px] font-normal leading-[150%] shadow-[0px_0px_4px_1px_rgba(0,0,0,0.25)] hover:bg-opacity-90 transition-all"
+        >
           See Description
         </button>
       </div>

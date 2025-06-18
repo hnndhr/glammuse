@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import HeroColor from "@/components/ColorMatch/HeroColor";
 import ColorFilterBox from "@/components/ColorMatch/ColorFilterBox";
@@ -6,6 +7,7 @@ import  InstructionSection from "@/components/ColorMatch/InstructionSection";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
+  const navigate = useNavigate();
   const [currentSeason, setCurrentSeason] = useState("Summer");
   const seasons = ["Spring", "Summer", "Autumn", "Winter"];
 
@@ -37,6 +39,10 @@ const Index = () => {
     },
   };
 
+  const handleSeeDescription = () => {
+    navigate(`/${currentSeason.toLowerCase()}`);
+  };
+
   const handlePreviousSeason = () => {
     const currentIndex = seasons.indexOf(currentSeason);
     const previousIndex =
@@ -63,6 +69,7 @@ const Index = () => {
           currentSeason={currentSeason}
           onPreviousSeason={handlePreviousSeason}
           onNextSeason={handleNextSeason}
+          onSeeDescription={handleSeeDescription}
           seasonalBackgrounds={seasonalBackgrounds}
         />
 
