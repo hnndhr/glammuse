@@ -23,17 +23,12 @@ const ResultColorSpring = () => {
           {/* Text Content */}
           <div className="text-justify max-w-[1040px] mx-auto">
             <h2 className="font-manrope text-xl md:text-2xl lg:text-[30px] font-bold leading-[150%] tracking-[0.6px] text-black mb-6">
-              Embrace the Effortless Elegance of Summer
+              Radiate Fresh Energy with Spring
             </h2>
 
             <div className="space-y-6">
               <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                Cool, calm, and naturally chic—you might be a Summer if soft
-                sophistication feels like second nature. This seasonal color
-                type is all about embracing gentle, cool-toned shades that
-                highlight your graceful glow. Think of serene pastels like dusty
-                rose, powder blue, misty lavender, and sage green—colors that
-                whisper, never shout.
+                Bright, fresh, and full of life—Spring types sparkle with youthful energy and warmth. Your palette is playful and uplifting, featuring clear, warm-toned colors like peach, coral, mint, light turquoise, butter yellow, and warm pinks.
               </p>
 
               <div>
@@ -41,11 +36,7 @@ const ResultColorSpring = () => {
                   In fashion
                 </h3>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                  Summer types shine in light, flowy fabrics and silver accents.
-                  Soft-wash denim, icy blue tops, and blush-toned dresses bring
-                  out your most radiant self. Go for gentle contrasts and avoid
-                  overly bright or saturated colors—they can overpower your
-                  delicate undertones.
+                  Spring types dazzle in light fabrics, fun prints, and gold-toned accents. Flowy dresses in coral or aqua, soft pastels, and light beige basics make your complexion come alive.
                 </p>
               </div>
 
@@ -54,16 +45,12 @@ const ResultColorSpring = () => {
                   For Makeup
                 </h3>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                  Reach for cool-toned rose blushes, taupe or mauve eyeshadows,
-                  and lip colors in soft pinks or berry tints. Light, natural
-                  looks will enhance your features beautifully, giving you that
-                  signature Summer softness.
+                  Use apricot blush, soft peach lips, warm brown mascara, and champagne-toned highlighters. Avoid dark or overly muted tones—they can weigh down your bright, airy look.
                 </p>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black mt-4">
-                  Ready to see your most authentic beauty bloom? The Summer
-                  palette was made to match your quiet confidence and timeless
-                  style. Let your colors speak with calm elegance.
+                 The Spring palette captures your lighthearted charm and joyful spirit. Embrace color that brings out your sparkle and keeps your style blooming.
                 </p>
+                
               </div>
             </div>
           </div>
