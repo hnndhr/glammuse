@@ -5,9 +5,13 @@ import { ArticleContent } from '@/components/ArticleContent';
 import { Footer } from '@/components/Footer';
 
 const Index: React.FC = () => {
+const handleSignOut = () => {
+    console.log("User signed out");
+  };
+
   return (
     <div className="bg-white flex flex-col min-h-screen">
-      <Header />
+      <Header activePage="home" onSignOut={handleSignOut} />
       
       <Hero
         title="What's the Best Skin-Care Routine?"
