@@ -58,8 +58,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-5">
       <Header />
+      <div className="bg-white pt-5"></div>
 
       <HeroColor />
 
