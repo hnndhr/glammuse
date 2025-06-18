@@ -26,7 +26,7 @@ const BlogCard = ({
       <div className="h-[294px] w-full bg-gray-200 overflow-hidden">
         {imageUrl ? (
           <img
-            src="{imageUrl}"
+            src={imageUrl}
             alt={title}
             className="w-full h-full object-cover"
             loading="lazy"
