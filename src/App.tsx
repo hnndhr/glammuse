@@ -16,6 +16,7 @@ import SkinTypeQuiz from "./pages/SkinTypeQuiz";
 import SkinTypeResults from "./pages/SkinTypeResults";
 import AboutUs from "./pages/AboutUs";
 import BodyShape from "./pages/BodyShape";
+import BodyTypeResults from "./pages/BodyTypeResults";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/skin-type-results" element={<SkinTypeResults />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/body" element={<BodyShape />} />
+          <Route path="/body-type-results" element={<BodyTypeResults />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

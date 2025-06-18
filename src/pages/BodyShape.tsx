@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -9,20 +10,14 @@ interface Measurements {
   highHip: string;
 }
 
-interface BodyTypeResult {
-  type: string;
-  description: string;
-}
-
 export default function BodyShape() {
+  const navigate = useNavigate();
   const [measurements, setMeasurements] = useState<Measurements>({
     bust: "",
     waist: "",
     hip: "",
     highHip: "",
   });
-
-  const [result, setResult] = useState<BodyTypeResult | null>(null);
 
   const handleSignOut = () => {
     console.log("User signed out");
@@ -43,7 +38,7 @@ export default function BodyShape() {
     }));
   };
 
-  const calculateBodyType = (): BodyTypeResult => {
+  const calculateBodyType = (): { type: string; description: string } => {
     const bust = parseFloat(measurements.bust);
     const waist = parseFloat(measurements.waist);
     const hip = parseFloat(measurements.hip);
@@ -159,7 +154,9 @@ export default function BodyShape() {
 
   const handleCalculate = () => {
     const bodyType = calculateBodyType();
-    setResult(bodyType);
+    if (bodyType.type !== "Invalid") {
+      navigate(`/body-type-results?type=${encodeURIComponent(bodyType.type)}`);
+    }
   };
 
   return (
@@ -296,22 +293,10 @@ export default function BodyShape() {
                 {/* Calculate Button */}
                 <button
                   onClick={handleCalculate}
-                  className="w-full max-w-[274px] h-[40px] bg-glam-tertiary text-white font-manrope text-[20px] font-normal rounded-[10px] shadow-md transition-all duration-300 hover:bg-glam-darkest hover:scale-105 focus:outline-none focus:ring-2 focus:ring-glam-cream focus:ring-opacity-50"
+                  className="w-full max-w-[274px] h-[40px] bg-tertiary text-white font-manrope text-[20px] font-normal rounded-[10px] shadow-md transition-all duration-300 hover:bg-glam-darkest hover:scale-105 focus:outline-none focus:ring-2 focus:ring-glam-cream focus:ring-opacity-50"
                 >
                   Calculate
                 </button>
-
-                {/* Result Display */}
-                {result && (
-                  <div className="w-full max-w-[274px] mt-6 p-4 bg-glam-cream rounded-[10px] border border-glam-primary">
-                    <h3 className="text-glam-tertiary font-manrope text-[18px] font-bold mb-2">
-                      Your Body Type: {result.type}
-                    </h3>
-                    <p className="text-glam-tertiary font-manrope text-[16px]">
-                      {result.description}
-                    </p>
-                  </div>
-                )}
               </div>
 
               {/* Body Diagram */}
@@ -409,10 +394,7 @@ export default function BodyShape() {
         </div>
       </div>
 
-      <Footer
-        onSocialClick={handleSocialClick}
-        onLinkClick={handleFooterLinkClick}
-      />
+      <Footer/>
     </div>
   );
 }
