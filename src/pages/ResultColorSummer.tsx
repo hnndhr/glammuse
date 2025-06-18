@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from '@/components/Header';
-import { HeroSection } from '@/components/ResultColor/Hero';
-import ColorPalette, { } from '@/components/ResultColor/ColorPalette';
+import { HeroSection } from '@/components/ResultColor/Summer/Hero';
+import ColorPalette, { } from '@/components/ResultColor/Summer/ColorPalette';
 import { Footer } from '@/components/Footer';
 
 const ResultColorSummer = () => {
