@@ -69,8 +69,6 @@ export default function Index() {
           renewalDate="Dec 25, 2025"
           onChangePlan={handleChangePlan}
         />
-        
-        <AnalysisHistory onViewDetails={handleViewAnalysisDetails} />
       </main>
       
       <Footer
