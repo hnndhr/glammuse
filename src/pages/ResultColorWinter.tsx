@@ -23,17 +23,12 @@ const ResultColorWinter = () => {
           {/* Text Content */}
           <div className="text-justify max-w-[1040px] mx-auto">
             <h2 className="font-manrope text-xl md:text-2xl lg:text-[30px] font-bold leading-[150%] tracking-[0.6px] text-black mb-6">
-              Embrace the Effortless Elegance of Summer
+              Unleash the Bold Power of Winter
             </h2>
 
             <div className="space-y-6">
               <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                Cool, calm, and naturally chic—you might be a Summer if soft
-                sophistication feels like second nature. This seasonal color
-                type is all about embracing gentle, cool-toned shades that
-                highlight your graceful glow. Think of serene pastels like dusty
-                rose, powder blue, misty lavender, and sage green—colors that
-                whisper, never shout.
+                Striking, crisp, and confident—Winter beauties are made to turn heads. This seasonal palette is filled with cool, high-contrast colors that bring drama and definition. Think icy white, jet black, sapphire blue, emerald green, and rich burgundy—bold shades that match your intense elegance.
               </p>
 
               <div>
@@ -41,11 +36,7 @@ const ResultColorWinter = () => {
                   In fashion
                 </h3>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                  Summer types shine in light, flowy fabrics and silver accents.
-                  Soft-wash denim, icy blue tops, and blush-toned dresses bring
-                  out your most radiant self. Go for gentle contrasts and avoid
-                  overly bright or saturated colors—they can overpower your
-                  delicate undertones.
+                  Winter types own clean lines, statement pieces, and sharp contrasts. Classic black and white combos, jewel-toned dresses, and sleek fabrics are your best friends. Metallics like silver and platinum add an edge that feels right at home.
                 </p>
               </div>
 
@@ -54,17 +45,13 @@ const ResultColorWinter = () => {
                   For Makeup
                 </h3>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black">
-                  Reach for cool-toned rose blushes, taupe or mauve eyeshadows,
-                  and lip colors in soft pinks or berry tints. Light, natural
-                  looks will enhance your features beautifully, giving you that
-                  signature Summer softness.
+                  Crisp winged eyeliner, deep berry or red lips, and cool-toned contouring enhance your strong features. Avoid warm or muted colors—they can dull your natural brilliance.
                 </p>
                 <p className="font-manrope text-base md:text-lg lg:text-xl font-normal leading-[150%] text-black mt-4">
-                  Ready to see your most authentic beauty bloom? The Summer
-                  palette was made to match your quiet confidence and timeless
-                  style. Let your colors speak with calm elegance.
+                  You’re not here to blend in. The Winter palette celebrates your cool intensity and bold glamour. Step into your season and let your style speak volumes.
                 </p>
               </div>
+              
             </div>
           </div>
         </div>
