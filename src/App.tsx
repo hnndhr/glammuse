@@ -8,6 +8,7 @@ import Article from "./pages/Article";
 import Color from "./pages/Color";
 import NotFound from "./pages/NotFound"; 
 import Profile from "./pages/Profile";
+import ResultColorSummer from "./pages/ResultColorSummer";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/article" element={<Article />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/color" element={<Color />} />
+          <Route path="/summer" element={<ResultColorSummer />} /> 
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
