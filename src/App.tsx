@@ -9,6 +9,7 @@ import Color from "./pages/Color";
 import NotFound from "./pages/NotFound"; 
 import Profile from "./pages/Profile";
 import ResultColorSummer from "./pages/ResultColorSummer";
+import ResultColorSpring from "./pages/ResultColorSpring";
 import SkinType from "./pages/Skin";
 import SkinTypeQuiz from "./pages/SkinTypeQuiz";
 import SkinTypeResults from "./pages/SkinTypeResults";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/color" element={<Color />} />
           <Route path="/skin" element={<SkinType />} />
           <Route path="/summer" element={<ResultColorSummer />} /> 
+          <Route path="/spring" element={<ResultColorSpring />} />
           <Route path="/skin-type-quiz" element={<SkinTypeQuiz />} />
           <Route path="/skin-type-results" element={<SkinTypeResults />} />
           <Route path="/about-us" element={<AboutUs />} />
