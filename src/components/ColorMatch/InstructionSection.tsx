@@ -3,12 +3,10 @@ import React from "react";
 const InstructionSection = () => {
   return (
     <div className="w-full max-w-none">
-      {/* Main Title */}
       <h3 className="text-black font-manrope text-[24px] font-bold leading-[150%] mb-8">
         How to Use the Color Match Filter Box Effectively
       </h3>
 
-      {/* Introduction */}
       <div className="mb-8">
         <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px] text-justify mb-6">
           Confidence begins with the right tones. Choosing the right personal
@@ -18,13 +16,11 @@ const InstructionSection = () => {
           representing unique color characteristics tailored to your skin
           undertone.
         </p>
-
         <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px] text-justify">
           Follow the steps below to find your ideal match:
         </p>
       </div>
 
-      {/* Instructions Grid */}
       <div className="grid gap-8">
         {/* Step 1 */}
         <div className="bg-gradient-to-r from-glam-cream/10 to-transparent p-6 rounded-lg border-l-4 border-glam-brown">
@@ -38,15 +34,13 @@ const InstructionSection = () => {
             <div className="flex items-start gap-3">
               <span className="text-glam-brown text-[20px] mt-1">•</span>
               <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px]">
-                Stand in front of a window or in a space with soft, natural
-                daylight.
+                Stand in front of a window or in a space with soft, natural daylight.
               </p>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-glam-brown text-[20px] mt-1">•</span>
               <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px]">
-                Avoid harsh artificial lighting or colored lights that may alter
-                how the filter appears on your skin.
+                Avoid harsh artificial lighting or colored lights that may alter how the filter appears on your skin.
               </p>
             </div>
           </div>
@@ -64,15 +58,13 @@ const InstructionSection = () => {
             <div className="flex items-start gap-3">
               <span className="text-glam-brown text-[20px] mt-1">•</span>
               <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px]">
-                Remove anything that may block your face, such as masks, hats,
-                or heavy bangs.
+                Remove anything that may block your face, such as masks, hats, or heavy bangs.
               </p>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-glam-brown text-[20px] mt-1">•</span>
               <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px]">
-                Tie your hair back if needed, especially if it shadows your
-                face.
+                Tie your hair back if needed, especially if it shadows your face.
               </p>
             </div>
           </div>
@@ -90,15 +82,13 @@ const InstructionSection = () => {
             <div className="flex items-start gap-3">
               <span className="text-glam-brown text-[20px] mt-1">•</span>
               <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px]">
-                For the most accurate result, use the filter with a clean face
-                or minimal makeup.
+                For the most accurate result, use the filter with a clean face or minimal makeup.
               </p>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-glam-brown text-[20px] mt-1">•</span>
               <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px]">
-                Bold lipsticks or strong blush may interfere with how the filter
-                adjusts to your natural tone.
+                Bold lipsticks or strong blush may interfere with how the filter adjusts to your natural tone.
               </p>
             </div>
           </div>
@@ -122,15 +112,13 @@ const InstructionSection = () => {
             <div className="flex items-start gap-3">
               <span className="text-glam-brown text-[20px] mt-1">•</span>
               <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px]">
-                Notice how each palette affects your skin tone, eye color, and
-                hair.
+                Notice how each palette affects your skin tone, eye color, and hair.
               </p>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-glam-brown text-[20px] mt-1">•</span>
               <p className="text-black font-manrope text-[20px] font-normal leading-[150%] tracking-[0.4px]">
-                The right filter will brighten your features and make you look
-                naturally radiant.
+                The right filter will brighten your features and make you look naturally radiant.
               </p>
             </div>
           </div>
