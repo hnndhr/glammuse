@@ -19,6 +19,8 @@ import AboutUs from "./pages/AboutUs";
 import BodyShape from "./pages/BodyShape";
 import BodyTypeResults from "./pages/BodyTypeResults";
 import ResultColorAutumn from "./pages/ResultColorAutumn";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/article" element={<Article />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/color" element={<Color />} />
