@@ -14,6 +14,7 @@ import ResultColorWinter from "./pages/ResultColorWinter";
 import SkinType from "./pages/Skin";
 import SkinTypeQuiz from "./pages/SkinTypeQuiz";
 import SkinTypeResults from "./pages/SkinTypeResults";
+import Wardrobe from "./pages/Wardrobe";
 import AboutUs from "./pages/AboutUs";
 import BodyShape from "./pages/BodyShape";
 import BodyTypeResults from "./pages/BodyTypeResults";
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/autumn" element={<ResultColorAutumn />} />
           <Route path="/skin-type-quiz" element={<SkinTypeQuiz />} />
           <Route path="/skin-type-results" element={<SkinTypeResults />} />
+           <Route path="/wardrobe" element={<Wardrobe />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/body" element={<BodyShape />} />
           <Route path="/body-type-results" element={<BodyTypeResults />} />
